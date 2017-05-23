@@ -1,0 +1,53 @@
+div {
+  border: 1px solid hotpink;
+}
+
+.navBar {
+  display: flex;
+  position: fixed;
+  height: 25%;
+  width: 100%;
+}
+
+.navBarImg {
+  width: 20%;
+  height: 20%;
+  margin-top: 3%;
+  position: fixed;
+  left: 4%;
+  z-index: 1;
+}
+.navBarTitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  width: 50%;
+  margin-left: 34%;
+  position: fixed;
+}
+
+.sections {
+  width: 70%;
+  margin-left: 26%;
+  position: fixed;
+  margin-top: 18%;
+}
+
+@media  only screen and (min-width: 768px) {
+    .sectionsDesktop {
+      margin-top: 8%;
+    }
+}
+
+.sectionsList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4%;
+}
+
+.sectionsItem {
+  display: inline;
+}
