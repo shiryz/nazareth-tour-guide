@@ -1,0 +1,39 @@
+div {
+  border: 1px solid hotpink;
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+}
+
+.navBarImg {
+  width: 20%;
+  height: 20%;
+  margin-top: 3%;
+  position: absolute;
+  left: 4%;
+  z-index: 1;
+}
+.navBarTitle {
+  align-items: center;
+  margin-top: 2%;
+}
+
+.sections {
+  width: 70%;
+  margin-left: 26%;
+}
+
+.sectionsList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+.sectionsItem {
+  display: inline;
+}
