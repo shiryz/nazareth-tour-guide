@@ -1,0 +1,19 @@
+{
+  "name": "nazareth-tour-guide",
+  "version": "1.0.0",
+  "description": "A website for a tour guide in Nazareth",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiryz/nazareth-tour-guide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shiryz/nazareth-tour-guide/issues"
+  },
+  "homepage": "https://github.com/shiryz/nazareth-tour-guide#readme"
+}
