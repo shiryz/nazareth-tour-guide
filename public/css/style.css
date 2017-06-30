@@ -2,6 +2,10 @@ div {
   border: 1px solid hotpink;
 }
 
+li {
+  list-style-type: none;
+}
+
 .navBar {
   display: flex;
   position: fixed;
@@ -58,7 +62,7 @@ div {
   position: absolute;
   display: flex;
   top: 30%;
-  height: 66%;
+  height: 69%;
 }
 
 .imgContainer {
@@ -81,4 +85,35 @@ div {
 .aboutParagraph {
   font-size: 170%;
   width: 70%;
+}
+
+/* TOURS */
+
+.toursSection {
+  display: flex;
+  top: 104%;
+  position: absolute;
+  height: 72%;
+  width: 100%;
+  align-items: center;
+  flex-flow: column;
+}
+
+.toursTitle {
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  width: 50%;
+  align-items: center;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: center;
+  height: 90%;
+  width: 90%;
+}
+
+.tour-text {
+  justify-content: center;
 }
