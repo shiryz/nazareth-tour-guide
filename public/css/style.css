@@ -1,23 +1,16 @@
-div {
-  border: 1px solid black;
-  box-shadow: 2px 2px 1px #888888;
-}
-
 li {
   list-style-type: none;
 }
 
 body {
-  background-color: #2A3132;
-}
-
-label {
-  font-size: 2rem;
+  background-color: #90afc5;
+  font-family: 'Volkhov';
+  font-size: 24px;
 }
 
 .navBar {
   z-index: 1;
-  background-color: #90AFC5;
+  background-color: #90afc5;
   display: flex;
   position: fixed;
   height: 25%;
@@ -36,11 +29,11 @@ label {
 
 
 .sectionsDesktop {
-  background-color: #336B87;
+  background-color: #90afc5;
 }
 
 .navBarTitle {
-  background-color: #336B87;
+  background-color: #90afc5;
   display: flex;
   justify-content: center;
   margin-top: 2%;
@@ -85,6 +78,8 @@ label {
   display: flex;
   top: 30%;
   height: 69%;
+  display: flex;
+  justify-content: center;
 }
 
 .imgContainer {
@@ -108,8 +103,7 @@ label {
 
 .aboutParagraph {
   background-color: #336B87;
-  font-size: 170%;
-  width: 70%;
+  width: 75%;
 }
 
 /* TOURS */
@@ -140,25 +134,30 @@ label {
   width: 90%;
 }
 
-.tour-text {
+.tourText {
+  width: 75%;
   justify-content: center;
 }
 
 /* Contact Section */
 
 .contactSection {
-  background-color: #336B87;
+  background-color: #90afc5;
   text-align: center;
   width: 100%;
   top: 180%;
   position: absolute;
-  font-size: 2rem;
+  padding-bottom: 60px;
+}
+
+.contactDetails {
+  color: #2a3132;
 }
 
 #phoneNumber {
-  font-size: 2rem;
+  color: #2a3132;
 }
 
 #email {
-  font-size: 2rem;
+  color: #2a3132;
 }
