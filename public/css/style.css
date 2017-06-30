@@ -90,9 +90,9 @@ li {
 /* TOURS */
 
 .toursSection {
+  display: flex;
   top: 104%;
   position: absolute;
-  display: flex;
   height: 72%;
   width: 100%;
   align-items: center;
@@ -100,27 +100,20 @@ li {
 }
 
 .toursTitle {
+  display: flex;
   justify-content: center;
   height: 10%;
   width: 50%;
   align-items: center;
-  display: flex;
 }
 
 .linksContainer {
   display: flex;
   justify-content: center;
   height: 90%;
-  width: 80%;
+  width: 90%;
 }
 
-.linksUl {
-  justify-content: space-around;
-  flex-flow: column;
-  flex-wrap: wrap;
-}
-
-.linkImg {
-  height: 20%;
-  width: 20%;
+.tour-text {
+  justify-content: center;
 }
