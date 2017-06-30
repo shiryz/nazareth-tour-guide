@@ -117,3 +117,12 @@ li {
 .tour-text {
   justify-content: center;
 }
+
+/* Contact Section */
+
+.contactSection {
+  text-align: center;
+  width: 100%;
+  top: 180%;
+  position: absolute;
+}
