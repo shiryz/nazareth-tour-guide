@@ -1,19 +1,34 @@
 {
-  "name": "nazareth-tour-guide",
+  "name": "reactstarter",
   "version": "1.0.0",
-  "description": "A website for a tour guide in Nazareth",
-  "main": "index.js",
+  "description": "",
+  "main": "index.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bundle": "webpack --config webpack.config.js",
+    "dev:start": "webpack-dev-server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shiryz/nazareth-tour-guide.git"
-  },
-  "author": "",
+  "author": "Karyum",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shiryz/nazareth-tour-guide/issues"
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.5",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-node-externals": "^1.6.0"
   },
-  "homepage": "https://github.com/shiryz/nazareth-tour-guide#readme"
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
 }
