@@ -1,7 +1,7 @@
 {
-  "name": "reactstarter",
+  "name": "nazareth-tour-guide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A website for a tour guide in Nazareth",
   "main": "index.jsx",
   "scripts": {
     "bundle": "webpack --config webpack.config.js",
