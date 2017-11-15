@@ -1,63 +1,103 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
+  position: fixed;
   width: 100%;
 `;
 
 const NavWrapper = styled.div`
-  position: fixed;
+  display: flex;
+  justify-content: flex-end;
 `;
 
 const NameWrapper = styled.div`
-  float: left;
+  display: flex;
+  justify-content: fles-start;
   width: 40%;
-  background-color: rgba(0, 0, 0, 0.1);
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin-left: 5%;
 `;
 
 const Name = styled.span`
   font-size: 2.25rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  color: yellow;
+  color: #404040;
 `;
 
-const Title = styled.span`
-  font-size: 3rem;
-  color: yellow;
+const A = styled.a`
+  color: #666;
+`;
+const LinksWrapper = styled.div`
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
 `;
 
-const TitleWrapper = styled.div`
-  text-align: center;
-  background-color: blue;
-  padding-top: 8rem;
-  padding-bottom: 2rem;
-`;
+class NavBar extends Component {
+  constructor() {
+    super();
 
-const NavBar = () => (
-  <Wrapper>
-    <NavWrapper>
-      <NameWrapper>
-        <Name>Eshi Zoaby</Name>
-      </NameWrapper>
-      <div className="dt dt--fixed w-60 fr">
-        <a className="dtc tc pv4 bg-black-10 link f2 yellow" href="#About">
-          About
-        </a>
-        <a className="dtc tc pv4 bg-black-10 link f2 yellow" href="#Tour">
-          Tour
-        </a>
-        <a className="dtc tc pv4 bg-black-10 link f2 yellow" href="#Contact">
-          Contact
-        </a>
-      </div>
-    </NavWrapper>
-    <TitleWrapper>
-      <Title>Nazareth Tour Guide</Title>
-    </TitleWrapper>
-  </Wrapper>
-);
+    this.state = {
+      a1: '#282828',
+      a2: '#666',
+      a3: '#666'
+    };
+
+    this.handleAbout = this.handleAbout.bind(this);
+    this.handleContact = this.handleContact.bind(this);
+    this.handleTour = this.handleTour.bind(this);
+  }
+
+  handleAbout() {
+    this.setState({ a1: '#282828', a2: '#666', a3: '#666' });
+  }
+
+  handleContact() {
+    this.setState({ a3: '#282828', a1: '#666', a2: '#666' });
+  }
+
+  handleTour() {
+    this.setState({ a2: '#282828', a3: '#666', a1: '#666' });
+  }
+
+  render() {
+    return (
+      <Wrapper>
+        <NavWrapper>
+          <NameWrapper>
+            <Name>OUSAMA SALEH</Name>
+          </NameWrapper>
+          <LinksWrapper>
+            <A
+              onClick={this.handleAbout}
+              className="pv4 link f3 mh4"
+              href="#About"
+              style={{ color: this.state.a1 }}
+            >
+              About
+            </A>
+            <A
+              onClick={this.handleTour}
+              className="pv4 link f3 mh4"
+              href="#Tour"
+              style={{ color: this.state.a2 }}
+            >
+              Tour
+            </A>
+            <A
+              onClick={this.handleContact}
+              className="pv4 link f3 mh4"
+              href="#Contact"
+              style={{ color: this.state.a3 }}
+            >
+              Contact
+            </A>
+          </LinksWrapper>
+        </NavWrapper>
+      </Wrapper>
+    );
+  }
+}
 
 export default NavBar;

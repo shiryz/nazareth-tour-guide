@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  text-align: center;
-  background-color: pink;
+  text-align: left;
+  margin-left: 2rem;
   padding-top: 2.5rem;
 `;
 
