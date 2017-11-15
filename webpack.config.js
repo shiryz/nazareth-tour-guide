@@ -4,8 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/index.jsx',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, 'public'),
+    filename: 'bundle.js',
+    publicPath: '/'
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -24,6 +25,10 @@ module.exports = {
       {
         test: /\.css$/,
         loaders: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.png$/,
+        loaders: ['file-loader']
       }
     ]
   },
@@ -35,5 +40,6 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.js', '.jsx']
-  }
+  },
+  watch: true
 };
