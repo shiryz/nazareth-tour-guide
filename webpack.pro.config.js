@@ -1,5 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/client/index.jsx',
@@ -7,10 +6,6 @@ module.exports = {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js',
     publicPath: '/'
-  },
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: './dist'
   },
   module: {
     loaders: [
@@ -32,14 +27,7 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './public/index.html'
-    })
-  ],
   resolve: {
     extensions: ['.js', '.jsx']
-  },
-  watch: true
+  }
 };

@@ -12,9 +12,8 @@ const NavWrapper = styled.div`
 `;
 
 const NameWrapper = styled.div`
+  width: 100%;
   display: flex;
-  justify-content: fles-start;
-  width: 40%;
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-left: 5%;
@@ -29,9 +28,9 @@ const A = styled.a`
   color: #666;
 `;
 const LinksWrapper = styled.div`
-  width: 60%;
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
 `;
 
 class NavBar extends Component {
@@ -71,7 +70,7 @@ class NavBar extends Component {
           <LinksWrapper>
             <A
               onClick={this.handleAbout}
-              className="pv4 link f3 mh4"
+              className="pt4 pb2 link f3 mh4"
               href="#About"
               style={{ color: this.state.a1 }}
             >
@@ -79,7 +78,7 @@ class NavBar extends Component {
             </A>
             <A
               onClick={this.handleTour}
-              className="pv4 link f3 mh4"
+              className="pv2 link f3 mh4"
               href="#Tour"
               style={{ color: this.state.a2 }}
             >
@@ -87,7 +86,7 @@ class NavBar extends Component {
             </A>
             <A
               onClick={this.handleContact}
-              className="pv4 link f3 mh4"
+              className="pv2 link f3 mh4"
               href="#Contact"
               style={{ color: this.state.a3 }}
             >

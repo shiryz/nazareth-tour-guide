@@ -6,7 +6,6 @@ const Wrapper = styled.div`
   padding-bottom: 5rem;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 `;
 
 const Title = styled.h1`
@@ -25,7 +24,7 @@ const Paragraph = styled.p`
 `;
 
 const Tour = () => (
-  <Wrapper id="Tour">
+  <Wrapper id="Tour" className="w-50-l w-80 ">
     <Title>Tour</Title>
     <Paragraph>
       Wow this tour is about some stuff which i don't know what the hell am i even doing im just
