@@ -7,6 +7,10 @@ const Wrapper = styled.div`
   padding-bottom: 5rem;
   margin-left: auto;
   margin-right: auto;
+  width: 80%;
+  @media (min-width: 60em) {
+    width: 50%;
+  }
 `;
 
 const Title = styled.h1`
@@ -27,6 +31,10 @@ const Paragraph = styled.p`
 const Image = styled.img`
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%;
+  @media (min-width: 60em) {
+    height: 50%;
+  }
 `;
 
 const ImageWrapper = styled.div`
@@ -36,7 +44,7 @@ const ImageWrapper = styled.div`
 
 const About = () => (
   <div>
-    <Wrapper className="w-50-l w-80 " id="About">
+    <Wrapper id="About">
       <Title>About</Title>
       <Paragraph>
         Wow this tour is about some stuff which i don't know what the hell am i even doing im just
@@ -47,7 +55,7 @@ const About = () => (
       </Paragraph>
     </Wrapper>
     <ImageWrapper>
-      <Image src={image} className="h-50-l" />
+      <Image src={image} />
     </ImageWrapper>
   </div>
 );

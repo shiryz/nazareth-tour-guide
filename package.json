@@ -5,7 +5,8 @@
   "main": "index.jsx",
   "scripts": {
     "bundle": "webpack --config webpack.config.js",
-    "dev": "webpack-dev-server --watch",
+    "devBundle": "webpack --config webpack.config.js",
+    "dev": "nodemon ./src/server/server.js",
     "start": "webpack --config webpack.pro.config.js && node ./src/server/server.js"
   },
   "author": "Karyum",
@@ -18,6 +19,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.4.0",
     "html-webpack-plugin": "^2.30.1",
+    "nodemon": "^1.12.1",
     "webpack-dev-server": "^2.9.4",
     "webpack-node-externals": "^1.6.0"
   },

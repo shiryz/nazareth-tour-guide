@@ -14,9 +14,9 @@ const NavWrapper = styled.div`
 const NameWrapper = styled.div`
   width: 100%;
   display: flex;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
-  margin-left: 5%;
+  margin-left: 2%;
 `;
 
 const Name = styled.span`
@@ -25,7 +25,14 @@ const Name = styled.span`
 `;
 
 const A = styled.a`
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.15s ease-in;
   color: #666;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 `;
 const LinksWrapper = styled.div`
   display: flex;
@@ -68,28 +75,13 @@ class NavBar extends Component {
             <Name>OUSAMA SALEH</Name>
           </NameWrapper>
           <LinksWrapper>
-            <A
-              onClick={this.handleAbout}
-              className="pt4 pb2 link f3 mh4"
-              href="#About"
-              style={{ color: this.state.a1 }}
-            >
+            <A onClick={this.handleAbout} href="#About" style={{ color: this.state.a1 }}>
               About
             </A>
-            <A
-              onClick={this.handleTour}
-              className="pv2 link f3 mh4"
-              href="#Tour"
-              style={{ color: this.state.a2 }}
-            >
+            <A onClick={this.handleTour} href="#Tour" style={{ color: this.state.a2 }}>
               Tour
             </A>
-            <A
-              onClick={this.handleContact}
-              className="pv2 link f3 mh4"
-              href="#Contact"
-              style={{ color: this.state.a3 }}
-            >
+            <A onClick={this.handleContact} href="#Contact" style={{ color: this.state.a3 }}>
               Contact
             </A>
           </LinksWrapper>
