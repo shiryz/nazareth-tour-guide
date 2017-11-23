@@ -32,7 +32,7 @@ const Image = styled.img`
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-  @media (min-width: 60em) {
+  @media (max-width: 60em) {
     height: 50%;
   }
 `;

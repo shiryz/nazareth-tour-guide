@@ -4,7 +4,7 @@ const compression = require('compression');
 
 const server = express();
 
-server.use(express.static(path.resolve(__dirname, '../..', 'public')));
+server.use(express.static(path.resolve(__dirname, '../..', 'dist')));
 server.use(compression());
 
 server.get('/*', (req, res) => res.sendFile(path.resolve(__dirname, '..', 'index.html')));
