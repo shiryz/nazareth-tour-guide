@@ -7,7 +7,7 @@ const server = express();
 server.use(express.static(path.resolve(__dirname, '../..', 'dist')));
 server.use(compression());
 
-server.get('/*', (req, res) => res.sendFile(path.resolve(__dirname, '..', 'index.html')));
+server.get('/*', (req, res) => res.sendFile(path.resolve(__dirname, '../../dist', 'index.html')));
 
 server.listen(process.env.PORT || 8080, () => {
   console.log('8080');
